@@ -109,7 +109,7 @@ const runAction = () => {
 		log("Skipping build script because `skip_build` option is set");
 	} else {
 		log("Running the build script…");
-		run(`npm run ${buildScriptName} --if-present`, pkgRoot);
+		run(`npm run ${buildScriptName}`);
 	}
 
 	try {
